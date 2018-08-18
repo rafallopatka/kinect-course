@@ -1,0 +1,26 @@
+﻿<Window x:Class="RobotController_FirstStep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:kt="clr-namespace:Kinect.Toolbox;assembly=Kinect.Toolbox"
+        Title="MainWindow" Height="611.273" Width="1146.764" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="320" />
+        </Grid.ColumnDefinitions>
+
+        <WebBrowser  x:Name="webBrowser"  Grid.Column="0" Source="http://www.niebezpiecznik.pl"/>
+
+        <StackPanel  Grid.Column="1">
+            <Canvas x:Name="imageCanvas" Height="250"/>
+            
+            <Button x:Name="button1" Content="1" kt:MagneticPropertyHolder.IsMagnetic="True" Height="40" Margin="5" Click="button1_Click"/>
+            <Button x:Name="button2" Content="2" kt:MagneticPropertyHolder.IsMagnetic="True" Height="40" Margin="5" Click="button2_Click"/>
+            <Button x:Name="button3" Content="3" kt:MagneticPropertyHolder.IsMagnetic="True" Height="40" Margin="5" Click="button3_Click"/>
+            <Button x:Name="button4" Content="4" kt:MagneticPropertyHolder.IsMagnetic="True" Height="40" Margin="5" Click="button4_Click"/>
+            <Button x:Name="button5" Content="5" kt:MagneticPropertyHolder.IsMagnetic="True" Height="40" Margin="5" Click="button5_Click"/>
+        </StackPanel>
+        
+        <Canvas Grid.ColumnSpan="2" x:Name="mouseCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+    </Grid>
+</Window>

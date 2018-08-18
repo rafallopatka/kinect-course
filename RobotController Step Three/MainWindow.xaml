@@ -1,0 +1,11 @@
+﻿<Window x:Class="RobotController_FirstStep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:kt="clr-namespace:Kinect.Toolbox;assembly=Kinect.Toolbox"
+        Title="MainWindow" Height="600" Width="900" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+        <Canvas Width="640" Height="480" x:Name="imageCanvas"/>
+        <Label x:Name="lblGesture" Content="" HorizontalAlignment="Left" Margin="272,11,0,0" VerticalAlignment="Top" Width="326" Foreground="Red" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblPosture" Content="" HorizontalAlignment="Left" Margin="272,530,0,0" VerticalAlignment="Top" Width="326" Foreground="Red" FontSize="18" FontWeight="Bold"/>
+    </Grid>
+</Window>

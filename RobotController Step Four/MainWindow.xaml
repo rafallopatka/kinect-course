@@ -1,0 +1,15 @@
+﻿<Window x:Class="RobotController_FirstStep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:kt="clr-namespace:Kinect.Toolbox;assembly=Kinect.Toolbox"
+        Title="MainWindow" Height="611.273" Width="1146.764" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+        <Canvas Width="640" Height="480" x:Name="imageCanvas" Margin="64,50,435,50"/>
+        <Label x:Name="lblGesture" Content="" HorizontalAlignment="Left" Margin="272,11,0,0" VerticalAlignment="Top" Width="326" Foreground="Red" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblPosture" Content="" HorizontalAlignment="Left" Margin="272,530,0,0" VerticalAlignment="Top" Width="326" Foreground="Red" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="lblClick" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="182" Foreground="Red" FontSize="18" FontWeight="Bold" Canvas.Left="866" Canvas.Top="144" RenderTransformOrigin="0.336,0.162"/>
+        <Button x:Name="button" Content="Left" Click="button_Click"  Margin="798,61,52,459" kt:MagneticPropertyHolder.IsMagnetic="True"/>
+
+        <Canvas x:Name="mouseCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+    </Grid>
+</Window>
